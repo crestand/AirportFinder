@@ -13,6 +13,9 @@
 		C383077E2C62303200F498D1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C383077D2C62303200F498D1 /* Base */; };
 		C38307802C62303400F498D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C383077F2C62303400F498D1 /* Assets.xcassets */; };
 		C38307832C62303400F498D1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C38307822C62303400F498D1 /* Base */; };
+		C383078C2C62361400F498D1 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = C383078B2C62361400F498D1 /* RxBlocking */; };
+		C383078E2C62361400F498D1 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = C383078D2C62361400F498D1 /* RxCocoa */; };
+		C38307902C62361400F498D1 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = C383078F2C62361400F498D1 /* RxRelay */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C38307902C62361400F498D1 /* RxRelay in Frameworks */,
+				C383078E2C62361400F498D1 /* RxCocoa in Frameworks */,
+				C383078C2C62361400F498D1 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,11 @@
 			dependencies = (
 			);
 			name = AirportFinder;
+			packageProductDependencies = (
+				C383078B2C62361400F498D1 /* RxBlocking */,
+				C383078D2C62361400F498D1 /* RxCocoa */,
+				C383078F2C62361400F498D1 /* RxRelay */,
+			);
 			productName = AirportFinder;
 			productReference = C38307732C62303200F498D1 /* AirportFinder.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = C383076A2C62303200F498D1;
+			packageReferences = (
+				C383078A2C62361400F498D1 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = C38307742C62303200F498D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -298,14 +312,14 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.crestand.airportfinder.AirportFinder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crestand.airportfinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -326,14 +340,14 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.crestand.airportfinder.AirportFinder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crestand.airportfinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -363,6 +377,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C383078A2C62361400F498D1 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C383078B2C62361400F498D1 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C383078A2C62361400F498D1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		C383078D2C62361400F498D1 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C383078A2C62361400F498D1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		C383078F2C62361400F498D1 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C383078A2C62361400F498D1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C383076B2C62303200F498D1 /* Project object */;
 }
