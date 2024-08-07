@@ -7,19 +7,23 @@
 
 import UIKit
 import RxSwift
+import RxDataSources
 
-class SearchCityViewController: UIViewController {
+class SearchCityViewController: UIViewController, Storyboardable {
 
     @IBOutlet private weak var roundedView: UIView!
     @IBOutlet private weak var searchTextField: UITextField!
     @IBOutlet private weak var tableView: UITableView!
     
-    var viewModel: SearchCityViewPresentable!
-    
+    private var viewModel: SearchCityViewPresentable!
+    var viewModelBuilder: SearchCityViewPresentable.ViewModelBuilder!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        viewModel = viewModelBuilder((
+            searchText: searchTextField.rx.text.orEmpty.asDriver(), ()
+        ))
     }
 
 
