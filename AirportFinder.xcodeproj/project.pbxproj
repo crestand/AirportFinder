@@ -7,26 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C34939F22C63729100F327BA /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = C34939F12C63729100F327BA /* Differentiator */; };
+		C34939F42C63729100F327BA /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = C34939F32C63729100F327BA /* RxDataSources */; };
 		C38307772C62303200F498D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38307762C62303200F498D1 /* AppDelegate.swift */; };
 		C38307792C62303200F498D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38307782C62303200F498D1 /* SceneDelegate.swift */; };
-		C383077B2C62303200F498D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383077A2C62303200F498D1 /* ViewController.swift */; };
+		C383077B2C62303200F498D1 /* SearchCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383077A2C62303200F498D1 /* SearchCityViewController.swift */; };
 		C383077E2C62303200F498D1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C383077D2C62303200F498D1 /* Base */; };
 		C38307802C62303400F498D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C383077F2C62303400F498D1 /* Assets.xcassets */; };
 		C38307832C62303400F498D1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C38307822C62303400F498D1 /* Base */; };
 		C383078C2C62361400F498D1 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = C383078B2C62361400F498D1 /* RxBlocking */; };
 		C383078E2C62361400F498D1 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = C383078D2C62361400F498D1 /* RxCocoa */; };
 		C38307902C62361400F498D1 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = C383078F2C62361400F498D1 /* RxRelay */; };
+		C3B8860C2C6242B2003ED44D /* SearchCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B8860B2C6242B2003ED44D /* SearchCityViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C38307732C62303200F498D1 /* AirportFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirportFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38307762C62303200F498D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C38307782C62303200F498D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C383077A2C62303200F498D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C383077A2C62303200F498D1 /* SearchCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityViewController.swift; sourceTree = "<group>"; };
 		C383077D2C62303200F498D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C383077F2C62303400F498D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C38307822C62303400F498D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C38307842C62303400F498D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3B8860B2C6242B2003ED44D /* SearchCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,8 +38,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C34939F22C63729100F327BA /* Differentiator in Frameworks */,
 				C38307902C62361400F498D1 /* RxRelay in Frameworks */,
 				C383078E2C62361400F498D1 /* RxCocoa in Frameworks */,
+				C34939F42C63729100F327BA /* RxDataSources in Frameworks */,
 				C383078C2C62361400F498D1 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,15 +68,32 @@
 		C38307752C62303200F498D1 /* AirportFinder */ = {
 			isa = PBXGroup;
 			children = (
+				C3B8860A2C62416B003ED44D /* ViewModel */,
+				C3B886092C624164003ED44D /* View */,
 				C38307762C62303200F498D1 /* AppDelegate.swift */,
 				C38307782C62303200F498D1 /* SceneDelegate.swift */,
-				C383077A2C62303200F498D1 /* ViewController.swift */,
 				C383077C2C62303200F498D1 /* Main.storyboard */,
 				C383077F2C62303400F498D1 /* Assets.xcassets */,
 				C38307812C62303400F498D1 /* LaunchScreen.storyboard */,
 				C38307842C62303400F498D1 /* Info.plist */,
 			);
 			path = AirportFinder;
+			sourceTree = "<group>";
+		};
+		C3B886092C624164003ED44D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C383077A2C62303200F498D1 /* SearchCityViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3B8860A2C62416B003ED44D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C3B8860B2C6242B2003ED44D /* SearchCityViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +116,8 @@
 				C383078B2C62361400F498D1 /* RxBlocking */,
 				C383078D2C62361400F498D1 /* RxCocoa */,
 				C383078F2C62361400F498D1 /* RxRelay */,
+				C34939F12C63729100F327BA /* Differentiator */,
+				C34939F32C63729100F327BA /* RxDataSources */,
 			);
 			productName = AirportFinder;
 			productReference = C38307732C62303200F498D1 /* AirportFinder.app */;
@@ -124,6 +149,7 @@
 			mainGroup = C383076A2C62303200F498D1;
 			packageReferences = (
 				C383078A2C62361400F498D1 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				C34939F02C63729100F327BA /* XCRemoteSwiftPackageReference "RxDataSources" */,
 			);
 			productRefGroup = C38307742C62303200F498D1 /* Products */;
 			projectDirPath = "";
@@ -152,9 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C383077B2C62303200F498D1 /* ViewController.swift in Sources */,
+				C383077B2C62303200F498D1 /* SearchCityViewController.swift in Sources */,
 				C38307772C62303200F498D1 /* AppDelegate.swift in Sources */,
 				C38307792C62303200F498D1 /* SceneDelegate.swift in Sources */,
+				C3B8860C2C6242B2003ED44D /* SearchCityViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +406,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C34939F02C63729100F327BA /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
 		C383078A2C62361400F498D1 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -390,6 +425,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C34939F12C63729100F327BA /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C34939F02C63729100F327BA /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		C34939F32C63729100F327BA /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C34939F02C63729100F327BA /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
 		C383078B2C62361400F498D1 /* RxBlocking */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C383078A2C62361400F498D1 /* XCRemoteSwiftPackageReference "RxSwift" */;
