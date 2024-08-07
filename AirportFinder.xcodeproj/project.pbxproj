@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		C34939F22C63729100F327BA /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = C34939F12C63729100F327BA /* Differentiator */; };
 		C34939F42C63729100F327BA /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = C34939F32C63729100F327BA /* RxDataSources */; };
+		C34939F72C63761700F327BA /* SearchCityCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34939F62C63761700F327BA /* SearchCityCoordinator.swift */; };
+		C34939F92C63763900F327BA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34939F82C63763900F327BA /* Coordinator.swift */; };
+		C34939FB2C63776F00F327BA /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34939FA2C63776F00F327BA /* BaseCoordinator.swift */; };
+		C34939FE2C63782500F327BA /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34939FD2C63782500F327BA /* Storyboardable.swift */; };
+		C3493A002C637B8D00F327BA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34939FF2C637B8D00F327BA /* AppCoordinator.swift */; };
 		C38307772C62303200F498D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38307762C62303200F498D1 /* AppDelegate.swift */; };
 		C38307792C62303200F498D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38307782C62303200F498D1 /* SceneDelegate.swift */; };
 		C383077B2C62303200F498D1 /* SearchCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383077A2C62303200F498D1 /* SearchCityViewController.swift */; };
@@ -22,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C34939F62C63761700F327BA /* SearchCityCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityCoordinator.swift; sourceTree = "<group>"; };
+		C34939F82C63763900F327BA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C34939FA2C63776F00F327BA /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		C34939FD2C63782500F327BA /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		C34939FF2C637B8D00F327BA /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		C38307732C62303200F498D1 /* AirportFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirportFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38307762C62303200F498D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C38307782C62303200F498D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C34939F52C6375B100F327BA /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C34939F62C63761700F327BA /* SearchCityCoordinator.swift */,
+				C34939F82C63763900F327BA /* Coordinator.swift */,
+				C34939FA2C63776F00F327BA /* BaseCoordinator.swift */,
+				C34939FF2C637B8D00F327BA /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		C34939FC2C63781200F327BA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C34939FD2C63782500F327BA /* Storyboardable.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		C383076A2C62303200F498D1 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +97,8 @@
 		C38307752C62303200F498D1 /* AirportFinder */ = {
 			isa = PBXGroup;
 			children = (
+				C34939FC2C63781200F327BA /* Shared */,
+				C34939F52C6375B100F327BA /* Coordinator */,
 				C3B8860A2C62416B003ED44D /* ViewModel */,
 				C3B886092C624164003ED44D /* View */,
 				C38307762C62303200F498D1 /* AppDelegate.swift */,
@@ -180,6 +211,11 @@
 			files = (
 				C383077B2C62303200F498D1 /* SearchCityViewController.swift in Sources */,
 				C38307772C62303200F498D1 /* AppDelegate.swift in Sources */,
+				C34939F92C63763900F327BA /* Coordinator.swift in Sources */,
+				C34939F72C63761700F327BA /* SearchCityCoordinator.swift in Sources */,
+				C34939FE2C63782500F327BA /* Storyboardable.swift in Sources */,
+				C34939FB2C63776F00F327BA /* BaseCoordinator.swift in Sources */,
+				C3493A002C637B8D00F327BA /* AppCoordinator.swift in Sources */,
 				C38307792C62303200F498D1 /* SceneDelegate.swift in Sources */,
 				C3B8860C2C6242B2003ED44D /* SearchCityViewModel.swift in Sources */,
 			);
