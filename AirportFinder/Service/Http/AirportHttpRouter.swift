@@ -14,7 +14,7 @@ enum AirportHttpRouter {
 extension AirportHttpRouter: HttpRouter {
     
     var baseUrlString: String {
-        return "https://gist.githubusercontent.com/tdreyno/4278655/raw/7b0762c09519f40397e4c3e100b097d861f5588"
+        return "https://raw.githubusercontent.com/JetSetExpert/airports/master/data/airports.json"
     }
     
     var path: String {
