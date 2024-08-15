@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C238AD02C6CE0B200F281B5 /* AirportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C238ACF2C6CE0B200F281B5 /* AirportModel.swift */; };
+		8C238AD32C6D674900F281B5 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C238AD22C6D674900F281B5 /* CustomError.swift */; };
 		C34939F22C63729100F327BA /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = C34939F12C63729100F327BA /* Differentiator */; };
 		C34939F42C63729100F327BA /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = C34939F32C63729100F327BA /* RxDataSources */; };
 		C34939F72C63761700F327BA /* SearchCityCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34939F62C63761700F327BA /* SearchCityCoordinator.swift */; };
@@ -14,6 +16,14 @@
 		C34939FB2C63776F00F327BA /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34939FA2C63776F00F327BA /* BaseCoordinator.swift */; };
 		C34939FE2C63782500F327BA /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34939FD2C63782500F327BA /* Storyboardable.swift */; };
 		C3493A002C637B8D00F327BA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34939FF2C637B8D00F327BA /* AppCoordinator.swift */; };
+		C3493A032C63963200F327BA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C3493A022C63963200F327BA /* Alamofire */; };
+		C3493A052C63963200F327BA /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C3493A042C63963200F327BA /* AlamofireDynamic */; };
+		C3493A092C6396A400F327BA /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3493A082C6396A400F327BA /* HttpRouter.swift */; };
+		C3493A0B2C6397AD00F327BA /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3493A0A2C6397AD00F327BA /* HttpService.swift */; };
+		C3493A0D2C63985F00F327BA /* AirportHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3493A0C2C63985F00F327BA /* AirportHttpService.swift */; };
+		C3493A0F2C6398C700F327BA /* AirportHttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3493A0E2C6398C700F327BA /* AirportHttpRouter.swift */; };
+		C3493A112C639B9100F327BA /* AirportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3493A102C639B9100F327BA /* AirportService.swift */; };
+		C3493A132C639BB400F327BA /* AirportAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3493A122C639BB400F327BA /* AirportAPI.swift */; };
 		C38307772C62303200F498D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38307762C62303200F498D1 /* AppDelegate.swift */; };
 		C38307792C62303200F498D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38307782C62303200F498D1 /* SceneDelegate.swift */; };
 		C383077B2C62303200F498D1 /* SearchCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383077A2C62303200F498D1 /* SearchCityViewController.swift */; };
@@ -27,11 +37,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C238ACF2C6CE0B200F281B5 /* AirportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportModel.swift; sourceTree = "<group>"; };
+		8C238AD22C6D674900F281B5 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		C34939F62C63761700F327BA /* SearchCityCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityCoordinator.swift; sourceTree = "<group>"; };
 		C34939F82C63763900F327BA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C34939FA2C63776F00F327BA /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		C34939FD2C63782500F327BA /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
 		C34939FF2C637B8D00F327BA /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C3493A082C6396A400F327BA /* HttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
+		C3493A0A2C6397AD00F327BA /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		C3493A0C2C63985F00F327BA /* AirportHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportHttpService.swift; sourceTree = "<group>"; };
+		C3493A0E2C6398C700F327BA /* AirportHttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportHttpRouter.swift; sourceTree = "<group>"; };
+		C3493A102C639B9100F327BA /* AirportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportService.swift; sourceTree = "<group>"; };
+		C3493A122C639BB400F327BA /* AirportAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportAPI.swift; sourceTree = "<group>"; };
 		C38307732C62303200F498D1 /* AirportFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirportFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38307762C62303200F498D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C38307782C62303200F498D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +69,8 @@
 				C34939F22C63729100F327BA /* Differentiator in Frameworks */,
 				C38307902C62361400F498D1 /* RxRelay in Frameworks */,
 				C383078E2C62361400F498D1 /* RxCocoa in Frameworks */,
+				C3493A032C63963200F327BA /* Alamofire in Frameworks */,
+				C3493A052C63963200F327BA /* AlamofireDynamic in Frameworks */,
 				C34939F42C63729100F327BA /* RxDataSources in Frameworks */,
 				C383078C2C62361400F498D1 /* RxBlocking in Frameworks */,
 			);
@@ -59,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C238ACE2C6CE02D00F281B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C238ACF2C6CE0B200F281B5 /* AirportModel.swift */,
+				8C238AD22C6D674900F281B5 /* CustomError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C34939F52C6375B100F327BA /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +105,27 @@
 				C34939FD2C63782500F327BA /* Storyboardable.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		C3493A062C63967B00F327BA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C3493A072C63968200F327BA /* Http */,
+				C3493A102C639B9100F327BA /* AirportService.swift */,
+				C3493A122C639BB400F327BA /* AirportAPI.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C3493A072C63968200F327BA /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				C3493A082C6396A400F327BA /* HttpRouter.swift */,
+				C3493A0A2C6397AD00F327BA /* HttpService.swift */,
+				C3493A0C2C63985F00F327BA /* AirportHttpService.swift */,
+				C3493A0E2C6398C700F327BA /* AirportHttpRouter.swift */,
+			);
+			path = Http;
 			sourceTree = "<group>";
 		};
 		C383076A2C62303200F498D1 = {
@@ -97,6 +147,8 @@
 		C38307752C62303200F498D1 /* AirportFinder */ = {
 			isa = PBXGroup;
 			children = (
+				8C238ACE2C6CE02D00F281B5 /* Model */,
+				C3493A062C63967B00F327BA /* Service */,
 				C34939FC2C63781200F327BA /* Shared */,
 				C34939F52C6375B100F327BA /* Coordinator */,
 				C3B8860A2C62416B003ED44D /* ViewModel */,
@@ -149,6 +201,8 @@
 				C383078F2C62361400F498D1 /* RxRelay */,
 				C34939F12C63729100F327BA /* Differentiator */,
 				C34939F32C63729100F327BA /* RxDataSources */,
+				C3493A022C63963200F327BA /* Alamofire */,
+				C3493A042C63963200F327BA /* AlamofireDynamic */,
 			);
 			productName = AirportFinder;
 			productReference = C38307732C62303200F498D1 /* AirportFinder.app */;
@@ -181,6 +235,7 @@
 			packageReferences = (
 				C383078A2C62361400F498D1 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				C34939F02C63729100F327BA /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				C3493A012C63963200F327BA /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = C38307742C62303200F498D1 /* Products */;
 			projectDirPath = "";
@@ -210,14 +265,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C383077B2C62303200F498D1 /* SearchCityViewController.swift in Sources */,
+				C3493A0F2C6398C700F327BA /* AirportHttpRouter.swift in Sources */,
+				8C238AD32C6D674900F281B5 /* CustomError.swift in Sources */,
+				C3493A0B2C6397AD00F327BA /* HttpService.swift in Sources */,
 				C38307772C62303200F498D1 /* AppDelegate.swift in Sources */,
+				C3493A092C6396A400F327BA /* HttpRouter.swift in Sources */,
 				C34939F92C63763900F327BA /* Coordinator.swift in Sources */,
+				C3493A0D2C63985F00F327BA /* AirportHttpService.swift in Sources */,
 				C34939F72C63761700F327BA /* SearchCityCoordinator.swift in Sources */,
 				C34939FE2C63782500F327BA /* Storyboardable.swift in Sources */,
 				C34939FB2C63776F00F327BA /* BaseCoordinator.swift in Sources */,
+				C3493A132C639BB400F327BA /* AirportAPI.swift in Sources */,
 				C3493A002C637B8D00F327BA /* AppCoordinator.swift in Sources */,
 				C38307792C62303200F498D1 /* SceneDelegate.swift in Sources */,
 				C3B8860C2C6242B2003ED44D /* SearchCityViewModel.swift in Sources */,
+				C3493A112C639B9100F327BA /* AirportService.swift in Sources */,
+				8C238AD02C6CE0B200F281B5 /* AirportModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +513,14 @@
 				minimumVersion = 5.0.2;
 			};
 		};
+		C3493A012C63963200F327BA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 		C383078A2C62361400F498D1 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -470,6 +541,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C34939F02C63729100F327BA /* XCRemoteSwiftPackageReference "RxDataSources" */;
 			productName = RxDataSources;
+		};
+		C3493A022C63963200F327BA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3493A012C63963200F327BA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		C3493A042C63963200F327BA /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3493A012C63963200F327BA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
 		};
 		C383078B2C62361400F498D1 /* RxBlocking */ = {
 			isa = XCSwiftPackageProductDependency;
