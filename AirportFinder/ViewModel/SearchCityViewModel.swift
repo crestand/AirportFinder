@@ -7,6 +7,7 @@
 
 import RxSwift
 import RxCocoa
+import RxRelay
 
 protocol SearchCityViewPresentable {
     
@@ -27,6 +28,9 @@ class SearchCityViewModel: SearchCityViewPresentable{
     private let airportService: AirportAPI
     private let bag = DisposeBag()
     
+    typealias State = (airports: BehaviorRelay<Set<AirportModel>>, ())
+    private let state: State = (airports: BehaviorRelay<Set<AirportModel>>(value: []), ())
+    
     init(input: SearchCityViewPresentable.Input,
          airportService: AirportAPI) {
         self.input = input
@@ -45,9 +49,8 @@ private extension SearchCityViewModel {
     func process() -> Void {
         self.airportService
             .fetchAirports()
-            .map({ (airports) in
-                print("Airports: \(airports)")
-            })
+            .map({ Set($0) })
+            .map({ [state] in state.airports.accept($0) })
             .subscribe()
             .disposed(by: self.bag)
     }
