@@ -10,9 +10,10 @@ import Foundation
 // MARK: - AirportResponseElement
 
 struct AirportModel: Codable {
-    var id, ident, type, name: String?
-    var latitudeDeg, longitudeDeg, elevationFt, continent: String?
-    var isoCountry, isoRegion, municipality, scheduledService: String?
+    var id, ident, type, name: String
+    var latitudeDeg, longitudeDeg, continent: String
+    var elevationFt: String?
+    var isoCountry, isoRegion, municipality, scheduledService: String
     var gpsCode, iataCode, localCode, homeLink: String?
     var wikipediaLink: String?
     var keywords: String?

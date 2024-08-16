@@ -34,7 +34,7 @@ class SearchCityViewModel: SearchCityViewPresentable{
     init(input: SearchCityViewPresentable.Input,
          airportService: AirportAPI) {
         self.input = input
-        self.output = SearchCityViewModel.output(input: self.input)
+        self.output = SearchCityViewModel.output(input: self.input,state: state,bag: bag)
         self.airportService = airportService
         self.process()
     }
@@ -42,7 +42,43 @@ class SearchCityViewModel: SearchCityViewPresentable{
 
 private extension SearchCityViewModel {
     
-    static func output(input: SearchCityViewPresentable.Input) -> SearchCityViewPresentable.Output {
+    static func output(input: SearchCityViewPresentable.Input,
+                       state:State,
+                       bag: DisposeBag) -> SearchCityViewPresentable.Output {
+        
+        let searchTextObservable = input.searchText
+            .debounce(.milliseconds(300))
+            .distinctUntilChanged()
+            .skip(1)
+            .asObservable()
+            .share(replay: 1,scope: .whileConnected)
+        
+        let airportsObservable = state.airports
+            .skip(1)
+            .asObservable()
+        
+        Observable
+            .combineLatest(searchTextObservable,airportsObservable)
+            .map({
+                (searchKey, airports) in
+                return airports.filter { (airport) -> Bool in
+                    !searchKey.isEmpty &&
+                    airport.municipality
+                        .lowercased()
+                        .replacingOccurrences(of: " ", with: "")
+                        .contains(
+                            searchKey.lowercased()
+                                .replacingOccurrences(of: " ", with: "")
+                        )
+                }
+                
+            })
+            .map {
+                print($0)
+            }
+            .subscribe()
+            .disposed(by: bag)
+        
         return ()
     }
     
